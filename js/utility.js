@@ -6,7 +6,7 @@ function getRndInteger(min, max) {
 //funzione play
 function startGame(){
     numsBox.innerHTML = "";
-    const numbers = [];
+    
     for (let i = 0; i < numsToGenerate ; i++){
         const num = getRndInteger(1,10);
         numsBox.innerHTML += `<div class="col">
@@ -33,4 +33,6 @@ function checkResult(){
             console.log('ciao');
         }
     }
+    console.log(resultArray);
+    console.log(numbers);
 }

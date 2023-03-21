@@ -16,3 +16,4 @@ start.addEventListener('click', startGame);
 const resultBox = document.querySelector('.result');
 const controlBtn = document.querySelector('.btn-warning');
 controlBtn.addEventListener('click', checkResult);
+const numbers = [];
