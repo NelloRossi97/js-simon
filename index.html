@@ -6,10 +6,25 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link rel="stylesheet" href="./css/style.css">
-        <title></title>
+        <title>Simon Says</title>
     </head>
     <body>
-        
+        <div class="wrapper vh-100 d-flex align-content-center">
+            <div class="container d-flex flex-column justify-content-center align-content-center">
+                <h1 class="text-center">Simon Says</h1>
+                <h2>Hai 30 secondi per ricordarti i 5 numeri che vedi. Scaduti i 30 secondi inserisci i numeri che ti ricordi nella casella che apparir&agrave; e scopri se hai vinto</h2>
+                <button class="btn btn-primary align-self-center mb-5">Inizia</button>
+                <div class="row mb-5">
+                    
+                </div>
+                <div class="result text-center d-flex flex-column align-content-center align-items-center opacity-0">
+                    <h2>Tempo scaduto!</h2>
+                    <label for="guess">Digita i numeri che ricordi</label>
+                    <input type="text" name="guess" id="guess">
+                    <button class="btn btn-warning align-self-center mt-3">Controlla</button>
+                </div>
+            </div>
+        </div>
 
         <script src="./js/utility.js"></script>
         <script src="./js/script.js"></script>
