@@ -7,6 +7,7 @@ function getRndInteger(min, max) {
 function startGame(){
     numsBox.innerHTML = "";
     endGameBox.innerHTML = "";
+    textBox = "";
     for (let i = 0; i < numsToGenerate ; i++){
         const num = getRndInteger(1,10);
         numsBox.innerHTML += `<div class="col">
@@ -30,10 +31,11 @@ function checkResult(){
     let resultArray = resultValue.split(" ");
     for (let i = 0; i < resultArray.length; i++){
         if (resultArray[i].includes(numbers[i])){
-            endGameBox.innerHTML = `<h2 class="text-success">Complimenti, hai vinto! Hai una buona memoria!</h2>`;
+            endGameBox.innerHTML = `<h2 class="text-success text-center">Complimenti, hai vinto! Hai una buona memoria!</h2>`;
         }
         else{
-            endGameBox.innerHTML = `<h2 class="text-danger">Mi dispiace, ma i numeri che hai inserito non sono gli stessi</h2>`;
+            endGameBox.innerHTML = `<h2 class="text-danger text-center">Mi dispiace, ma i numeri che hai inserito non sono gli stessi</h2>
+            <h3 class="text-center"> I numeri generati erano: ${numbers} e tu hai inserito: ${resultArray}`;
         }
     }
     numbers = [];
